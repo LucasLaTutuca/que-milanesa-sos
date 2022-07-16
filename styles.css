@@ -112,6 +112,12 @@ i:hover{
         justify-content: center;
         margin: 3px;
     }
+    .contenedor-iconos{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 70px;
+    }
     i{
         margin: 10px;
         font-size: 40px;
@@ -150,6 +156,8 @@ i:hover{
         margin-top: 20px;
         height: 40px;
         width: 200px;
+        background-color: aliceblue;
+        color: black;
         animation-name: desplazamiento-de-inicio;
         animation-duration: 3s;
         position: relative;
@@ -167,7 +175,7 @@ i:hover{
         font-size: 25px;
         font-family: 'Bangers', cursive;
         font-weight: 200;
-        text-shadow: 2px 2px 2px white;
+        text-shadow: 2px 2px 1px white;
     }
     .milanesa{
         height: 270px;
