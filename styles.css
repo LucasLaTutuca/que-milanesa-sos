@@ -138,13 +138,13 @@ i:hover{
         margin-top: 20px;
         padding: 0px;
         height: max-content;
-        width: 375px;
+        width: 355px;
         background: transparent;
         border-radius: 30px;
     }
     .contenedor-titulo{
         padding: 0;
-        width: 375px;
+        width: 355px;
     }
     .titulo{
         font-size: 35px;
