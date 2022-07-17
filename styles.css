@@ -1,6 +1,5 @@
 body{
     background-image: url(img/fondo.png);
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
@@ -12,43 +11,40 @@ header{
 nav{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 3px;
 }
 .contenedor-iconos{
+    display: flex;
     height: 50px;
     width: 70px;
+    justify-content: center;
+    align-items: center;
 }
 i{
     margin: 10px;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+    font-size: 45px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .8px rgb(255, 255, 255);
     transition-duration: .5s;
     animation-name: desplazamiento-de-inicio;
     animation-duration: 2s;
     position: relative;
-}
-i:hover{
-    font-size: 43px;
-    color: rgb(0, 0, 0);
 }
 .contenedor-principal{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 20px;
-    padding: 20px;
     height: max-content;
-    width: 800px;
-    background: transparent;
-    border-radius: 30px;
 }
 .titulo{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Bangers', cursive;
     font-weight: 200;
-    text-shadow: 3px 1px 1px white;
+    color: white;
+    -webkit-text-stroke: 2px black;
     animation-name: desplazamiento-de-inicio;
     animation-duration: 3s;
     position: relative;
@@ -60,7 +56,7 @@ i:hover{
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 40px;
+    height: 30px;
     width: 200px;
     animation-name: desplazamiento-de-inicio;
     animation-duration: 3s;
@@ -69,24 +65,33 @@ i:hover{
 .contenedor-imagen{
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 600px;
-    border-radius: 10px;
-    border: none;
+    justify-content: center;
+}
+.contenedor-resultado__titulo{
+    display: flex;
+    justify-content: center;
 }
 .titulo-imagen{
-    text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Bangers', cursive;
-    font-weight: 200;
-    text-shadow: 2px 2px 2px white;
+    letter-spacing: 1px;
+    color: white;
+    -webkit-text-stroke: .8px black;
+}
+.contenedor-resultado__imagen{
+    display: flex;
+    justify-content: center;
+    margin: none;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .milanesa{
-    height: 450px;
-    width: 600px;
-    object-fit: cover;
+    height: 250px;
+    width: 350px;
     border-radius: 10px;
-    border-style: none;
+    object-fit: cover;
 }
 
 @keyframes desplazamiento-de-inicio{
@@ -98,94 +103,100 @@ i:hover{
     }
 }
 
-@media screen and (max-width: 700px){
-    html{
-        overflow: hidden;
-    }
+@media (min-width: 768px) {
     body{
         background-image: url(img/fondo.png);
-        background-size: auto;
+        background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         overflow: hidden;
-        max-width: max-content;
     }
     nav{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         margin: 3px;
     }
     .contenedor-iconos{
         display: flex;
-        justify-content: center;
         height: 50px;
         width: 70px;
+        justify-content: center;
+        align-items: center;
     }
     i{
         margin: 10px;
-        font-size: 40px;
+        font-size: 45px;
         color: rgb(0, 0, 0);
+        -webkit-text-stroke: .8px rgb(255, 255, 255);
         transition-duration: .5s;
         animation-name: desplazamiento-de-inicio;
         animation-duration: 2s;
         position: relative;
     }
+    i:hover{
+        font-size: 50px;
+        color: rgb(85, 21, 145);
+    }
     .contenedor-principal{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
-        padding: 0px;
+        margin: auto;
         height: max-content;
-        width: 355px;
-        background: transparent;
-        border-radius: 30px;
-    }
-    .contenedor-titulo{
-        padding: 0;
-        width: 355px;
     }
     .titulo{
-        font-size: 35px;
+        text-align: center;
+        font-size: 60px;
         font-family: 'Bangers', cursive;
         font-weight: 200;
-        text-shadow: 3px 1px 1px white;
+        letter-spacing: 1px;
+        color: white;
+        -webkit-text-stroke: 2px black;
         animation-name: desplazamiento-de-inicio;
         animation-duration: 3s;
         position: relative;
+    }
+    .contenedor-input{
+        display: flex;
     }
     .desglosado{
         margin: auto;
         margin-top: 20px;
-        height: 40px;
+        margin-bottom: 20px;
+        height: 50px;
         width: 200px;
-        background-color: aliceblue;
-        color: black;
         animation-name: desplazamiento-de-inicio;
         animation-duration: 3s;
         position: relative;
+        border-radius: 5px;
     }
-    .contenedor-imagen{
+    .contenedor-resultado{
         display: flex;
         flex-direction: column;
-        height: 270px;
-        width: 300px;
-        border-radius: 10px;
-        border: none;
+        justify-content: center;
     }
     .titulo-imagen{
-        text-align: center;
-        font-size: 25px;
+        font-size: 45px;
         font-family: 'Bangers', cursive;
-        font-weight: 200;
-        text-shadow: 2px 2px 1px white;
+        letter-spacing: 1px;
+        color: white;
+        -webkit-text-stroke: .8px black;
+    }
+    .contenedor-resultado__imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: none;
+        height: 400px;
+        width: 550px;
+        border-radius: 10px;
+        overflow: hidden;
     }
     .milanesa{
-        height: 270px;
-        width: 300px;
-        object-fit: cover;
+        height: 400px;
+        width: 550px;
         border-radius: 10px;
-        border-style: none;
+        object-fit: cover;
     }
 }
