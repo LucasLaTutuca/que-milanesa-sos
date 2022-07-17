@@ -176,6 +176,9 @@ i{
         flex-direction: column;
         justify-content: center;
     }
+    .contenedor-resultado__titulo{
+        text-align: center;
+    }
     .titulo-imagen{
         font-size: 45px;
         font-family: 'Bangers', cursive;
@@ -189,13 +192,13 @@ i{
         align-items: center;
         margin: none;
         height: 400px;
-        width: 550px;
+        width: 600px;
         border-radius: 10px;
         overflow: hidden;
     }
     .milanesa{
         height: 400px;
-        width: 550px;
+        width: 600px;
         border-radius: 10px;
         object-fit: cover;
     }
