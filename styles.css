@@ -96,7 +96,7 @@ i{
 
 @keyframes desplazamiento-de-inicio{
     0%{
-        transform: translateX(1300px);
+        transform: translateY(-450px);
     }
     100%{
         transform: translateX(0);
